@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            background: white;
+        }  
+        /*************HEADER*************/
+        #header{
+            background: magenta ;
+            padding: 5px;
+            margin: 0 auto;
+        }
+        .container{
+            text-align: center;
+        } 
+
+        #header-img{
+            position: relative;
+                margin: 0 auto;
+                display: block;
+        }
+
+        #h1-div{
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav-bar{
+            display: inline;
+        }
+        .nav-link{
+            text-decoration: none;
+            padding: 15px;
+        }
+       
+        
+        /***********PARAGRAPH************/
+        #para1{
+            margin: 0;
+            font-size: x-large;
+        }
+
+        #form-video{
+            display: flex;
+            background-color:  rgb(213, 225, 238);
+        }
+        #video{
+            width: 50%;
+        }
+        #form{
+            width: 50%;
+            padding: 0 6px;
+            text-align: center;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+
+        select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: magenta;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        figure.markets-img {
+            display: inline-block;
+            margin: 0;
+        }
+        div#about-img-div > * {
+            display: inline-block;
+            vertical-align: top;
+        }
+        div#about-img-div {
+            width: fit-content;
+            margin: 0 auto;
+        }
+        div#about-img-div ul{
+            font-size: 20px;
+        }
+        #about-fitness h3{
+            text-align: center;
+        }
+        #h1-div h1{
+            margin-bottom: 0;
+        }
+        #h1-div p{
+            margin-top: 0;
+        }
+        h3{
+            text-align: center;
+        }
+        #markets p{
+            font-size: larger;
+            text-align: center;
+        }
+        #about-fitness{
+            background-color: rgb(213, 225, 238);
+            padding-top: 5px;
+        }
+
+        #about-heading{
+            font-size: 50px;
+            font-weight: 5;
+            color: gray;
+        }
+        #footer-copyright{
+            text-align: center;
+            background-color: magenta;
+            padding: 30px;
+            font-weight: bold;
+        }
+        @media (min-width: 768px){
+            #header-img{
+                position: absolute;
+            }
+        }
+        @media (max-width:767px){
+            #form-video{
+                display: block;
+            }
+            #form-video >*{
+                width: 100%;
+                display: block;
+            }
+            #para1{
+                font-size:medium ;
+            }
+            
+        }
+
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="https://www.fitnessnetwork.co.za/html-assets/fn-logo-transparent.png">
+            <div class="container">
+                <div id="h1-div">
+                    <h1>Gym Equipment</h1>
+                    <p>from SA’s leading Fitness Equipment Specialist</p>
+                </div>
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#markets">Markets We Serve</a>
+                    <a class="nav-link" href="#about-fitness">About Us</a>
+                    <a class="nav-link" href="#form">Cntact Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <P id="para1">
+            Gym Equipment comes in many different shapes and forms; be it a Home Gym, Commercial Gym or Corporate Fitness facility.
+            Gym Equipment includes everything to do with exercise whether you are looking for a gym bench, power rack, free weights or Multi Gyms.
+         </P>
+
+        <div id="form-video">
+            <video id="video" src="videos/Gym-Equip.mp4"  controls></video>
+
+            <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                <h2>Drop us a line and lets talk fitness</h2>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                <input type="text" id="number" name="number" placeholder="Contact Number" pattern="[0-9]{10}" required><br>
+                <input type="text" id="email" name="email" placeholder="Email Address" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required><br>
+                <textarea placeholder="Your message here(Optional)" style="resize:none;" ></textarea><br>
+                <select> Your training enevironment:
+                    <OPtion>Select one</OPtion>
+                    <OPtion>HOME</OPtion>
+                    <OPtion>CORPORATE</OPtion>
+                    <OPtion>INTERIOR & ARCHITECTURE</OPtion>
+                    <OPtion>HOTELS</OPtion>
+                    <OPtion>SCHOOLS & UNIVERSITIES</OPtion>
+                    <OPtion>PERSONAL TRAINERS</OPtion>
+                    <OPtion>ARMED FORCES</OPtion>
+                </select><br>
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+
+        <div id="markets">
+            <h3>Markets we serve</h3>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/home.png">
+                <br>
+                <figcaption>Home</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/corporate.png">
+                <br>
+                <figcaption>Corporate</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img  src="https://www.fitnessnetwork.co.za/html-assets/market/hotels.png">
+                <br>
+                <figcaption>Hotels</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/interior.png">
+                <br>
+                <figcaption>Interior and Architecture</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/schools.png">
+                <br>
+                <figcaption>Schools and Universities</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/personal.png">
+                <br>
+                <figcaption>Personal Trainers</figcaption>
+            </figure>
+            <figure class="markets-img">
+                <img src="https://www.fitnessnetwork.co.za/html-assets/market/armed.png">
+                <br>
+                <figcaption>Armed Forces</figcaption>
+            </figure>
+            <P>
+            At Fitness Network, we pride ourselves on being able to offer world-class products and services related to the fitness industry.
+            </P>
+        </div>
+
+        <div id="about-fitness">
+            <h3 id="about-heading">Why choose fitness network?</h3>
+            <div id="about-img-div">
+                <img id="about-img" src="https://www.fitnessnetwork.co.za/html-assets/fn-logo-transparent.png">
+                <ul>
+                    <li>Fitness Network employs industry experts to offer the correct advice for your needs</li><br>
+                    <li>Fitness Network is SA’s leading retailer of fitness equipment</li><br>
+                    <li>Fitness Network stocks a range of equipment from the world’s leading brands</li><br>
+                    <li>Fitness Network offers secure online purchasing</li><br>
+                    <li>Fitness Network offers an exceptional purchasing experience</li><br>
+                </ul>
+            </div>
+            <p>
+                Founded in 2006, Fitness Network is SA's fastest growing supplier of specialist Fitness Equipment. 
+                We offer the best branded products at the most competitive prices, with a resolute customer-first approach. 
+                We can also offer exclusive access to award winning fitness brands like WaterRower, Force USA and Tunturi. 
+                When it comes to service & maintenance Fitness Network have South Africa covered. Fitness Network offer expertise with facility design, 
+                marketing and local market insights.
+            </p>
+            <p>
+                Whether you simply need some boxing gloves to release stress or a complete Home Gym or Commercial Gym,
+                our expertise in Fitness ensures that we can provide a complete fitness solution to fit your budget and lifestyle.
+            </p>
+        </div>
+
+        <footer>
+            <p id="footer-copyright">© Copyright Fitness Network, 2020. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
